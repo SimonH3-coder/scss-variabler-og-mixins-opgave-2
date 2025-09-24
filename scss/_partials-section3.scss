@@ -1,0 +1,12 @@
+@use "partials-variables.scss" as *;
+@use "partials-mixins.scss" as *;
+.three {
+  @include section-style;
+  background-color: blue;
+}
+
+.three figure {
+  @include section-style;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

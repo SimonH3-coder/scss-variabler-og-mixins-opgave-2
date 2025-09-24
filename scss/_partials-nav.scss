@@ -1,0 +1,41 @@
+@mixin nav-style {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  //Stilarter for <nav> elementet kommer her
+  background-color: #f2f2f2;
+  padding: 0.5rem 1rem;
+  transition: 300ms ease-in-out;
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    //Disse stilarter drejer sig kun om <ul> inde i <nav>
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    gap: 10px;
+
+    li {
+      //Gælder kun <li> inde i <ul> inde i <nav>
+      margin-bottom: 10px;
+
+      a {
+        //Gælder kun <a> inde i <nav><ul><li>
+        text-decoration: none;
+        color: #333;
+        &:hover {
+          filter: brightness(0.8) contrast(2);
+          background-color: aqua;
+        }
+      }
+    }
+  }
+}

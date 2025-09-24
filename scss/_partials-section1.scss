@@ -1,0 +1,13 @@
+@use "partials-variables.scss" as *;
+@use "partials-mixins.scss" as *;
+
+.one {
+  @include section-style;
+  background-color: #b91d09;
+  display: flex;
+  flex-direction: column;
+
+  article {
+    display: flex;
+  }
+}

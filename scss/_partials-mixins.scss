@@ -1,0 +1,5 @@
+@use "partials-variables.scss" as *;
+@mixin section-style {
+  border: 2px solid $secondary-color;
+  border-radius: 50px;
+}
